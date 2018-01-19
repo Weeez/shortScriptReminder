@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>MyScripts</title>
+	<link rel="stylesheet" href="./popup.css">
+	<link rel="stylesheet" href="./libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script src="./libs/jquery/jquery-3.2.1.min.js"></script>	
+	<script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>    
+    <script src="popup.js"></script>
+  </head>
+  <body>
+	<div id="container" class="container myContainer">
+		<form>		
+			<div id="addToList" class="form-group row addToList">  		
+				<a id="downloadContainer" class="downloadContainer">
+					<button type="button" id="downloadButton" class="btn btn-default btn-sm form-control">
+						Save my list
+					</button>   
+				</a>
+				<div id="addToListContainer" class="addToListContainer">
+					<div class="col-xs-4">
+						<label for="name">name</label>
+						<input id="name" class="form-control" type="text">
+					</div>
+					<div class="col-xs-6 noPadding">
+						<label for="myScript">script</label>				
+						<input id="myScript" class="form-control">
+					</div>
+					<div class="col-xs-2 myButton">
+						<label for="button"></label>
+						<button type="button" id="addToListButton" class="btn btn-default btn-sm form-control">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>      
+					</div>
+				</div>	
+			</div>
+		</form>
+		<div id="listContainer" class="listContainerOff">
+			<div id="list" class="list"></div>    
+			<div id="scriptBox" class= "scriptBox"></div>
+		</div>		
+	</div>
+  </body>
+</html>

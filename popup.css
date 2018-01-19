@@ -1,0 +1,111 @@
+body {
+	font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+	font-size: 100%;
+}
+.container {
+	/* avoid an excessively wide status text */        
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 400px;
+	height: 410px;
+	word-wrap: break-word;
+}
+
+.listContainerOn{
+	margin-top: 60px;
+	display: inline-block;
+	width: 1000px;
+	height: 410px;
+	transform: translateX(-400px);
+    transition-property: transform;
+    transition-duration: 1.5s;
+}
+
+.listContainerOff{
+	margin-top: 60px;
+	display: inline-block;
+	width: 1000px;
+	height: 410px;
+	transform: translateX(0px); 
+    transition-property: transform;
+    transition-duration: 1.5s;
+	z-index: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.addToList{
+	z-index: 1;
+    left: 0;
+    right: 0;
+    position: absolute;
+	background-color: white;
+}
+
+.list{
+	display:block;
+	float:left;
+	width: 400px;
+	height: 400px;
+	margin-top: 40px;
+}
+
+.scriptBox{
+	display: block;
+	float:left;
+	width: 380px;
+	height: 400px;
+	margin-top: 50px;
+	word-wrap: break-word;
+}
+
+.scriptBox:hover{
+	cursor: pointer;
+}
+
+.listRow{
+	/*display: block;*/
+	margin: 3px;
+}
+
+.listRow:hover{
+	/*display: block;*/
+	color: red;
+	cursor: pointer;
+	background-color: rgba(94, 149, 193, 0.2);
+}
+
+
+.myContainer{
+	//margin-top: 10px;
+}
+.myButton{
+	margin-top: 5px;
+}
+.noPadding{
+	padding-left: 0px !important;
+	padding-right: 0px !important; 
+}
+
+.addToListContainer{
+	margin: 5px;
+}
+
+
+.listElementName{
+	/*display: inline-block;
+	width: 400px;*/
+	height: 40px;
+    padding-top: 10px;
+}
+
+.listElementScriptOff{
+	/*display: none;
+	/*display: inline-block;*/
+	/*width: 600px;*/
+}
+.listElementScriptOn{
+	/*display: inline-block;
+	width: 600px;*/
+}
